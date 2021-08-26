@@ -1,12 +1,10 @@
 <div class="card">
-    <img src="https://www.casasbahia-imagens.com.br/Control/ArquivoExibir.aspx?IdArquivo=1339605537"
-        class="card-img-top p-4 pb-0" alt="...">
+    <img [src]="produto?.imagem" class="card-img-top p-4 pb-0" alt="...">
     <div class="card-body">
-        <span class="badge bg-success">Super Oferta</span>
-        <span class="badge bg-warning"><i class="fa fa-star"></i></span>
-        <h6 class="card-title">Smart TV LED 50" UHD 4K LG 50UN7310PSC Wi-Fi, Bluetooth, HDR,
-            Inteligência...</h6>
-        <p class="card-text">R$ 2.999,99</p>
+        <span class="badge bg-success" *ngIf="produto?.isSuperOferta">Super Oferta</span>
+        <span class="badge bg-warning" *ngIf="produto?.isFavorito"><i class="fa fa-star"></i></span>
+        <h6 class="card-title">{{produto?.nome}}</h6>
+        <p class="card-text">{{produto?.preco}}</p>
 
         <div class="row mb-2 float-end">
             <div class="col-12">

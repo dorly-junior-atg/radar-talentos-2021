@@ -1,0 +1,50 @@
+[
+    {
+        "id": 1,
+        "imagem": "https://www.casasbahia-imagens.com.br/Control/ArquivoExibir.aspx?IdArquivo=1339605537",
+        "nome" : "Smart TV LED 50 UHD 4K LG 50UN7310PSC Wi-Fi, Bluetooth, HDR, Inteligência...",
+        "preco" : "R$ 2.999,99",
+        "isFavorito": false,
+        "isSuperOferta": false
+    },
+    {
+        "id": 2,
+        "imagem": "https://www.casasbahia-imagens.com.br/informatica/notebook/13486093/1243014849/notebook-lenovo-amd-ryzen-5-3500u-8gb-1tb-tela-15-6-windows-10-ideapad-s145-81v70004br-55003873.jpg",
+        "nome" : "Notebook Lenovo AMD Ryzen 5-3500U",
+        "preco" : "R$ 3.599,00",
+        "isFavorito": false,
+        "isSuperOferta": false
+    },
+    {
+        "id": 3,
+        "imagem": "https://www.casasbahia-imagens.com.br/Control/ArquivoExibir.aspx?IdArquivo=1405193812",
+        "nome" : "Smartphone Xiaomi Redmi 9A Azul 32GB",
+        "preco" : "R$ 778,05",
+        "isFavorito": false,
+        "isSuperOferta": false
+    },
+    {
+        "id": 4,
+        "imagem": "https://www.casasbahia-imagens.com.br/Control/ArquivoExibir.aspx?IdArquivo=1333602886",
+        "nome" : "Smartphone Xiaomi Redmi Note 9 Cinza 128GB",
+        "preco" : "R$ 1699,99",
+        "isFavorito": false,
+        "isSuperOferta": false
+    },
+    {
+        "id": 5,
+        "imagem": "https://www.casasbahia-imagens.com.br/Control/ArquivoExibir.aspx?IdArquivo=1597223819",
+        "nome" : "Monitor Samsung LED 24 Pol Widescreen",
+        "preco" : "R$ 890,10",
+        "isFavorito": false,
+        "isSuperOferta": false
+    },
+    {
+        "id": 6,
+        "imagem": "https://www.casasbahia-imagens.com.br/Control/ArquivoExibir.aspx?IdArquivo=464792379",
+        "nome" : "Impressora Tanque de Tinta Epson L805",
+        "preco" : "R$2.639,00",
+        "isFavorito": false,
+        "isSuperOferta": false
+    }
+]

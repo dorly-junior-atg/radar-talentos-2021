@@ -19,8 +19,8 @@
     <div class="row">
         <div class="col-lg-8 pe-4">
             <div class="row">
-                <div class="col-lg-4 col-md-6   mt-3">
-                    <app-produto-card></app-produto-card>
+                <div class="col-lg-4 col-md-6   mt-3" *ngFor="let produto of produtos">
+                    <app-produto-card [produto]="produto"></app-produto-card>
                 </div>
             </div>
         </div>
