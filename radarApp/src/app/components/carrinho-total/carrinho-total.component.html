@@ -4,6 +4,6 @@
             <h5 class="mb-1">Meu Pedido</h5>
             <small *ngIf="carrinho && carrinho?.produtos?.length != 0">{{exibirTotalItens()}} Itens Adicionados</small>
         </div>
-        <p class="mb-1">{{carrinho.total | currency}}</p>
+        <p class="mb-1">{{carrinho.total | currency: 'BRL'}}</p>
     </a>
 </div>
