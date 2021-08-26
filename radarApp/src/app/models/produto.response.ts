@@ -2,7 +2,7 @@ export class ProdutoResponse {
     public id: number;
     public imagem: string;
     public nome: string;
-    public preco: string;
+    public preco: number;
     public isFavorito: boolean;
     public isSuperOferta: boolean;
     public quantidade: number;

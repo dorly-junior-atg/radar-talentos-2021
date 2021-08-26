@@ -12,4 +12,8 @@ export class CarrinhoTotalComponent implements OnInit {
     constructor() {}
 
     ngOnInit(): void {}
+
+    exibirTotalItens(): number {
+        return this.carrinho.produtos.map(p => p.quantidade).reduce((soma, valor) => soma + valor); 
+    }
 }

@@ -2,7 +2,7 @@
     <a href="#" class="list-group-item list-group-item-action flex-column align-items-start active text-white">
         <div class="d-flex w-100 justify-content-between">
             <h5 class="mb-1">Meu Pedido</h5>
-            <small>6 Intens Adicionados</small>
+            <small *ngIf="carrinho && carrinho?.produtos?.length != 0">{{exibirTotalItens()}} Itens Adicionados</small>
         </div>
         <p class="mb-1">{{carrinho.total | currency}}</p>
     </a>
