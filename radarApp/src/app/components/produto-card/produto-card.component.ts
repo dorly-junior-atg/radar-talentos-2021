@@ -17,4 +17,8 @@ export class ProdutoCardComponent implements OnInit {
     adicionarAoCarrinho(produto: ProdutoResponse): void {
         this.carrinhoService.adicionarAoCarrinho(produto);
     }
+
+    favoritar(produto: ProdutoResponse): void {
+        produto.isFavorito = !produto.isFavorito;
+    }
 }

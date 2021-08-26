@@ -9,9 +9,9 @@
             <div class="col-md-9">
                 <div class="card-body">
                     <h6 class="card-title">{{produto.nome}}</h6>
-                    <p class="card-text">{{produto.preco}}</p>
+                    <p class="card-text">{{produto.preco | currency: 'BRL'}}</p>
                     <p class="card-text"><small class="text-muted">{{produto.quantidade}} Unidades</small></p>
-                    <button class="btn btn-sm btn-outline-danger float-right" type="button"><i class="fas fa-times"></i></button>
+                    <button (click)="removerProduto(produto)" class="btn btn-sm btn-outline-danger float-right" type="button"><i class="fas fa-times"></i></button>
                 </div>
             </div>
         </div>

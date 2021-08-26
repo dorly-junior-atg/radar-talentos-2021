@@ -24,7 +24,16 @@ export class CarrinhoComponent implements OnInit {
         });
     }
 
+    removerProduto(produto: ProdutoResponse): void {
+        this.carrinho.produtos = this.carrinho.produtos.filter((item) => item.id !== produto.id);
+        this.subtrairTotal(produto);
+    }
+
     somarTotal(produto: ProdutoResponse): void {
         this.carrinho.total += produto.preco * produto.quantidade;
+    }
+
+    subtrairTotal(produto: ProdutoResponse): void {
+        this.carrinho.total -= produto.preco * produto.quantidade;
     }
 }
