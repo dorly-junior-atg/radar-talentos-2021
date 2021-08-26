@@ -1,0 +1,10 @@
+{
+  "files.exclude": {
+    "README.md": true,
+    "src\\favicon.ico": true,
+    "src\\browserslist": true,
+    "src\\polyfills.ts": true,
+    "src\\tsconfig.app.json": true
+},
+"workbench.colorCustomizations": {}
+}
