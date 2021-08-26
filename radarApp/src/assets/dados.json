@@ -14,7 +14,7 @@
         "nome" : "Notebook Lenovo AMD Ryzen 5-3500U",
         "preco" : "3599",
         "isFavorito": false,
-        "isSuperOferta": false,
+        "isSuperOferta": true,
         "quantidade": 1
     },
     {
@@ -50,7 +50,7 @@
         "nome" : "Impressora Tanque de Tinta Epson L805",
         "preco" : "2639.00",
         "isFavorito": false,
-        "isSuperOferta": false,
+        "isSuperOferta": true,
         "quantidade": 1
     }
 ]

@@ -4,11 +4,11 @@
         <span class="badge bg-success" *ngIf="produto?.isSuperOferta">Super Oferta</span>
         <span class="badge bg-warning" *ngIf="produto?.isFavorito"><i class="fa fa-star"></i></span>
         <h6 class="card-title">{{produto?.nome}}</h6>
-        <p class="card-text">{{produto?.preco}}</p>
+        <p class="card-text">{{produto?.preco | currency: 'BRL'}}</p>
 
         <div class="row mb-2 float-end">
             <div class="col-12">
-                <button class="btn btn-sm btn-outline-warning"> <i class="fa fa-star"></i> Favoritar</button>
+                <button (click)="favoritar(produto)" class="btn btn-sm btn-outline-warning"> <i class="fa fa-star"></i> Favoritar</button>
             </div>
         </div>
 
