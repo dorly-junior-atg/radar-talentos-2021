@@ -5,6 +5,7 @@ export class ProdutoResponse {
     public preco: string;
     public isFavorito: boolean;
     public isSuperOferta: boolean;
+    public quantidade: number;
 
     constructor(params?: Partial<ProdutoResponse>) { 
         this.id = params?.id!;
@@ -13,5 +14,6 @@ export class ProdutoResponse {
         this.preco = params?.preco!;
         this.isFavorito = params?.isFavorito!;
         this.isSuperOferta = params?.isSuperOferta!;
+        this.quantidade = 0;
     }
 }
