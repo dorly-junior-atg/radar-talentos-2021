@@ -19,21 +19,25 @@ export class CarrinhoComponent implements OnInit {
 
     adicionarProdutos(): void {
         this.carrinhoService.eventoStream$.subscribe((produto) => {
-            this.carrinho.produtos.push(produto);
-            this.somarTotal(produto);
+            const produtoJaIncluido = this.carrinho.produtos.filter( item => item.id == produto.id)[0];
+
+            if(!produtoJaIncluido) {
+                this.carrinho.produtos.push(produto);
+            } 
+            
+            this.recalcularTotal();
         });
     }
 
     removerProduto(produto: ProdutoResponse): void {
         this.carrinho.produtos = this.carrinho.produtos.filter((item) => item.id !== produto.id);
-        this.subtrairTotal(produto);
+        this.recalcularTotal();
     }
 
-    somarTotal(produto: ProdutoResponse): void {
-        this.carrinho.total += produto.preco * produto.quantidade;
-    }
-
-    subtrairTotal(produto: ProdutoResponse): void {
-        this.carrinho.total -= produto.preco * produto.quantidade;
+    recalcularTotal(): void {
+        this.carrinho.total = 0;
+        this.carrinho.produtos.forEach(produto => {
+            this.carrinho.total += produto.quantidade * produto.preco;
+        });
     }
 }

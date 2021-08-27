@@ -6,7 +6,7 @@
         "preco" : "2999.99",
         "isFavorito": false,
         "isSuperOferta": false,
-        "quantidade": 1
+        "quantidade": 0
     },
     {
         "id": 2,
@@ -15,7 +15,7 @@
         "preco" : "3599",
         "isFavorito": false,
         "isSuperOferta": true,
-        "quantidade": 1
+        "quantidade": 0
     },
     {
         "id": 3,
@@ -24,7 +24,7 @@
         "preco" : "778.05",
         "isFavorito": false,
         "isSuperOferta": false,
-        "quantidade": 1
+        "quantidade": 0
     },
     {
         "id": 4,
@@ -33,7 +33,7 @@
         "preco" : "1699.99",
         "isFavorito": false,
         "isSuperOferta": false,
-        "quantidade": 1
+        "quantidade": 0
     },
     {
         "id": 5,
@@ -42,7 +42,7 @@
         "preco" : "890.10",
         "isFavorito": false,
         "isSuperOferta": false,
-        "quantidade": 1
+        "quantidade": 0
     },
     {
         "id": 6,
@@ -51,6 +51,6 @@
         "preco" : "2639.00",
         "isFavorito": false,
         "isSuperOferta": true,
-        "quantidade": 1
+        "quantidade": 0
     }
 ]

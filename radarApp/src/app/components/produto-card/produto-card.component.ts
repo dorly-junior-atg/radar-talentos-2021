@@ -9,12 +9,14 @@ import { CarrinhoService } from 'src/app/services/carrinho.service';
 })
 export class ProdutoCardComponent implements OnInit {
     @Input() produto: ProdutoResponse;
+    quantidade: number = 1;
     
     constructor(private carrinhoService: CarrinhoService) {}
 
     ngOnInit(): void {}
 
     adicionarAoCarrinho(produto: ProdutoResponse): void {
+        produto.quantidade += this.quantidade;
         this.carrinhoService.adicionarAoCarrinho(produto);
     }
 

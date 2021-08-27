@@ -13,9 +13,9 @@
         </div>
 
         <div class="input-group">
-            <input type="number" required name="quantidade" [(ngModel)]="produto.quantidade" placeholder="Qtd" class="form-control">
+            <input type="number" required name="quantidade" [(ngModel)]="quantidade" placeholder="Qtd" class="form-control">
             <div class="input-group-append">
-                <button [disabled]="!produto.quantidade || produto.quantidade <= 0" (click)="adicionarAoCarrinho(produto)" class="btn btn-success" type="button">Quero Adicionar</button>
+                <button [disabled]="!quantidade || quantidade <= 0" (click)="adicionarAoCarrinho(produto)" class="btn btn-success" type="button">Quero Adicionar</button>
             </div>
         </div>
     </div>
